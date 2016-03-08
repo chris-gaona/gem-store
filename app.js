@@ -5,6 +5,18 @@
 
   .controller('StoreCtrl', function() {
     this.products = gems;
+  })
+
+  .controller('PanelCtrl', function() {
+    this.tab = 1;
+
+    this.selectTab = function(setTab) {
+      this.tab = setTab;
+    };
+
+    this.isSelected = function(selected) {
+      return this.tab === selected;
+    };
   });
 
   var gems = [
