@@ -4,6 +4,13 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
   <body>
+    <div ng-controller="StoreCtrl as store">
+      <h1>{{store.product.name}}</h1>
+      <h2>{{store.product.price}}</h2>
+      <p>
+        {{store.product.description}}
+      </p>
+    </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <p>
