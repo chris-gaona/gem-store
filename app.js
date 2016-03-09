@@ -35,6 +35,18 @@
           full: "image2.jpg",
           thumb: "thumb2-image.jpg"
         }
+      ],
+      reviews: [
+        {
+          stars: 5,
+          body: "I love this product!",
+          author: "joe@thomas.com"
+        },
+        {
+          stars: 4,
+          body: "I like gems!",
+          author: "author@email.com"
+        }
       ]
     },
     {
@@ -51,6 +63,18 @@
         {
           full: "image2.jpg",
           thumb: "thumb2-image.jpg"
+        }
+      ],
+      reviews: [
+        {
+          stars: 3,
+          body: "I love this product!",
+          author: "joe@thomas.com"
+        },
+        {
+          stars: 4,
+          body: "I like gems!",
+          author: "author@email.com"
         }
       ]
     }
