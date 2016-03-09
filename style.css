@@ -1,0 +1,39 @@
+html, body, * {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+select {
+  outline: none;
+  width: 200px;
+  padding: 10px;
+  display: block;
+  margin: 5px;
+}
+
+textarea {
+  outline: none;
+  width: 400px;
+  padding: 10px;
+  display: block;
+  margin: 5px;
+}
+
+input {
+  outline: none;
+  width: 300px;
+  padding: 10px;
+  display: block;
+  margin: 5px;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: #fa787e;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78fa89;
+}
