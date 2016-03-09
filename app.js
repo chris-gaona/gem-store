@@ -17,6 +17,15 @@
     this.isSelected = function(selected) {
       return this.tab === selected;
     };
+  })
+
+  .controller('ReviewCtrl', function() {
+    this.review = {};
+
+    this.addReview = function(product) {
+      product.reviews.push(this.review);
+      this.review = {};
+    };
   });
 
   var gems = [
