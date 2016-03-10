@@ -6,8 +6,11 @@
   </head>
   <body ng-controller="StoreCtrl as store">
     <div ng-hide="product.soldOut" ng-repeat="product in store.products">
-      <h1 ng-include="'product-title.html'"></h1>
-      <!-- <h2>{{product.price | currency}}</h2> -->
+      <h1>{{product.name}}</h1>
+      <!-- Must be on host server like node.js using localhost on my browsert to view the templates -->
+      <!-- <h1 ng-include="'product-title.html'"></h1> -->
+      <product-title></product-title>
+      <h2>{{product.price | currency}}</h2>
       <p>
         {{product.description}}
       </p>

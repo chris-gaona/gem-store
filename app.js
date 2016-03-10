@@ -33,6 +33,10 @@
     return {
       restrict: 'E',
       templateUrl: 'product-title.html'
+      // controller: function() {
+      //
+      // },
+      // controllerAs: 'panels'
     };
   });
 
