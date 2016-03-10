@@ -1,7 +1,8 @@
 (function() {
   'use strict';
 
-  var app = angular.module('store', [])
+  //adds store-products as dependency to store app
+  var app = angular.module('store', ['store-products'])
 
   .controller('StoreCtrl', function() {
     this.products = gems;
@@ -26,17 +27,6 @@
       this.review.createdOn = Date.now();
       product.reviews.push(this.review);
       this.review = {};
-    };
-  })
-
-  .directive('productTitle', function() {
-    return {
-      restrict: 'E',
-      templateUrl: 'product-title.html'
-      // controller: function() {
-      //
-      // },
-      // controllerAs: 'panels'
     };
   });
 
