@@ -4,9 +4,20 @@
   //adds store-products as dependency to store app
   var app = angular.module('store', ['store-products'])
 
-  .controller('StoreCtrl', function() {
+  .controller('StoreCtrl', ['$http', '$log', function($http, $log) {
     this.products = gems;
-  })
+
+    //this following is used when fetching data from api
+    // var store = this;
+    // store.products = [];
+
+    //way to fetch json from an api long version
+    // $http({method: 'GET', url: '/products.json'});
+    //way to fetch json from an api short version
+    // $http.get('/products.json', {apiKey: 'myApiKey'}).success(function(response) {
+    //   this.products = response;
+    // });
+  }])
 
   .controller('PanelCtrl', function() {
     this.tab = 1;
